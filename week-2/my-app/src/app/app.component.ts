@@ -1,11 +1,10 @@
 /*
 ============================================
-Title: 1.5 Profile App
+Title: 2.5 Navigation
 Author: Professor Krasso
-Date: 6 July 2020
+Date: 13 July 2020
 Modified by: Clayton Stacy
-Description: Create an Angular app and demonstrate
-simple data binding
+Description: Demonstrate basic navigation
 ============================================
 */
 
@@ -17,5 +16,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  assignment: string = 'Assignment 1.5 - Components';
+  title = 'my-app';
 }
