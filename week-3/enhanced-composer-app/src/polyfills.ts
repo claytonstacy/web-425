@@ -1,3 +1,12 @@
+/*
+============================================
+Title: 3.2 Passing Data to Routes, Part 1
+Author: Clayton Stacy
+Date: 21 July 2020
+Modified by: Clayton Stacy
+Description: Demonstrate Angular Routing and Data Binding
+============================================
+*/
 /**
  * This file includes polyfills needed by Angular and is loaded before the app.
  * You can add your own extra polyfills to this file.
