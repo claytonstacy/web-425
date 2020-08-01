@@ -1,10 +1,10 @@
 /*
 ============================================
-Title: 2.3 Data Binding
-Author: Professor Krasso
-Date: 13 July 2020
+Title: 3.3 Passing Data to Routes, Part 2
+Author: Clayton Stacy
+Date: 21 July 2020
 Modified by: Clayton Stacy
-Description: Demonstrate Angular data binding
+Description: Routing
 ============================================
 */
 import { Component, OnInit } from '@angular/core';

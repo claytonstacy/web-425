@@ -1,12 +1,13 @@
 /*
 ============================================
-Title: 3.3 Passing Data to Routes, Part 2
+Title: 4.2 Inversion of Control and Dependency Injection
 Author: Clayton Stacy
-Date: 21 July 2020
+Date: 1 August 2020
 Modified by: Clayton Stacy
-Description: Routing
+Description: Demonstrate Angular Routing and Data Binding
 ============================================
 */
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -15,4 +16,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title = '4.2 Inversion of Control and Dependency Injection';
 }

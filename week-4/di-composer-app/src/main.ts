@@ -1,12 +1,13 @@
 /*
 ============================================
-Title: 3.3 Passing Data to Routes, Part 2
+Title: 4.2 Inversion of Control and Dependency Injection
 Author: Clayton Stacy
-Date: 21 July 2020
+Date: 1 August 2020
 Modified by: Clayton Stacy
-Description: Routing
+Description: Demonstrate Angular Routing and Data Binding
 ============================================
 */
+
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
