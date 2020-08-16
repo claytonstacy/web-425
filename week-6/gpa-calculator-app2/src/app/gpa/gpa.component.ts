@@ -7,15 +7,16 @@ Modified by: Clayton Stacy
 Description: Demonstrate how to pass data between components
 ============================================
 */
-import { Component, OnInit } from '@angular/core';
+
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-not-found',
-  templateUrl: './not-found.component.html',
-  styleUrls: ['./not-found.component.scss']
+  selector: 'app-gpa',
+  templateUrl: './gpa.component.html',
+  styleUrls: ['./gpa.component.scss']
 })
-export class NotFoundComponent implements OnInit {
-
+export class GpaComponent implements OnInit {
+  @Input() gpaTotal: number;
   constructor() { }
 
   ngOnInit(): void {

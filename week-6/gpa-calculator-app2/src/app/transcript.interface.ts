@@ -7,12 +7,8 @@ Modified by: Clayton Stacy
 Description: Demonstrate how to pass data between components
 ============================================
 */
-import { Component } from '@angular/core';
 
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
-})
-export class AppComponent {
+export interface ITranscript {
+    course: string;
+    grade: string;
 }
