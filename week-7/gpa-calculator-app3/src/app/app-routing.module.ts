@@ -1,10 +1,10 @@
 /*
 ============================================
-Title: 6.4- Input Properties
+Title: 7.2- Reactive Forms
 Author: Clayton Stacy
-Date: 16 August 2020
+Date: 23 August 2020
 Modified by: Clayton Stacy
-Description: Demonstrate how to pass data between components
+Description: Build and process reactive forms
 ============================================
 */
 import { NgModule } from '@angular/core';
@@ -13,6 +13,8 @@ import { AuthLayoutComponent } from './auth-layout/auth-layout.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { BaseLayoutComponent } from './base-layout/base-layout.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import {SignInGuard } from './sign-in.guard';
 
 const routes: Routes = [
   {path: '', component: BaseLayoutComponent,
@@ -21,7 +23,8 @@ const routes: Routes = [
       path: '',
       component: HomeComponent
     }
-  ]
+  ],
+  canActivate: [SignInGuard]
 },
 {
   path: 'session',
@@ -30,6 +33,10 @@ const routes: Routes = [
     {
       path: 'not-found',
       component: NotFoundComponent
+    },
+    {
+      path: 'sign-in',
+      component: SignInComponent
     }
   ]
 },

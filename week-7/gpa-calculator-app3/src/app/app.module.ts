@@ -1,10 +1,10 @@
 /*
 ============================================
-Title: 6.4- Input Properties
+Title: 7.2- Reactive Forms
 Author: Clayton Stacy
-Date: 16 August 2020
+Date: 23 August 2020
 Modified by: Clayton Stacy
-Description: Demonstrate how to pass data between components
+Description: Build and process reactive forms
 ============================================
 */
 import { BrowserModule } from '@angular/platform-browser';
@@ -20,7 +20,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 
 import { AuthLayoutComponent } from './auth-layout/auth-layout.component';
@@ -29,6 +29,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
 import { GpaComponent } from './gpa/gpa.component';
 import { GradeSummaryComponent } from './grade-summary/grade-summary.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { GradeSummaryComponent } from './grade-summary/grade-summary.component';
     NotFoundComponent,
     HomeComponent,
     GpaComponent,
-    GradeSummaryComponent
+    GradeSummaryComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
@@ -52,6 +54,7 @@ import { GradeSummaryComponent } from './grade-summary/grade-summary.component';
     MatInputModule,
     MatListModule,
     FormsModule,
+    ReactiveFormsModule,
     MatSelectModule
   ],
   providers: [],

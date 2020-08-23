@@ -1,13 +1,15 @@
 /*
 ============================================
-Title: 6.4- Input Properties
+Title: 7.2- Reactive Forms
 Author: Clayton Stacy
-Date: 16 August 2020
+Date: 23 August 2020
 Modified by: Clayton Stacy
-Description: Demonstrate how to pass data between components
+Description: Build and process reactive forms
 ============================================
 */
 import { Component, OnInit } from '@angular/core';
+import { CookieService } from 'ngx-cookie-service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-base-layout',
@@ -17,11 +19,15 @@ import { Component, OnInit } from '@angular/core';
 export class BaseLayoutComponent implements OnInit {
   assignment: string;
 
-  constructor() {
-    this.assignment = 'Exercise 6.4 - Input Properties '
+  constructor(private cookieService: CookieService, private router: Router) {
+    this.assignment = 'Exercise 7.2 - Reactive Forms '
    }
 
   ngOnInit(): void {
   }
+signOut() {
+  this.cookieService.deleteAll();
+  this.router.navigate(['/session/sign-in']);
+}
 
 }

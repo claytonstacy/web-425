@@ -1,10 +1,10 @@
 /*
 ============================================
-Title: 6.4- Input Properties
+Title: 7.2- Reactive Forms
 Author: Clayton Stacy
-Date: 16 August 2020
+Date: 23 August 2020
 Modified by: Clayton Stacy
-Description: Demonstrate how to pass data between components
+Description: Build and process reactive forms
 ============================================
 */
 
